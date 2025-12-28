@@ -1,22 +1,25 @@
-/* Reset */
+/* --------------------
+   RESET & BASE
+-------------------- */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Body */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
   color: #111;
   text-align: center;
-  padding: 24px;
+  padding: 28px 16px;
 }
 
-/* Header */
+/* --------------------
+   HEADER
+-------------------- */
 .site-header {
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .brand {
@@ -28,27 +31,29 @@ body {
 .tagline {
   margin-top: 10px;
   font-size: 16px;
-  color: #555;
+  color: #666;
 }
 
-/* Categories */
+/* --------------------
+   CATEGORY / PRODUCT AREA
+-------------------- */
 .categories {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
   max-width: 420px;
   margin: 0 auto 40px;
 }
 
+/* used for index page category links */
 .category {
   display: block;
   padding: 16px;
+  margin-bottom: 14px;
   border: 1px solid #ddd;
+  border-radius: 8px;
   text-decoration: none;
   color: #111;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 6px;
+  background: #fff;
 }
 
 .category:hover {
@@ -56,8 +61,68 @@ body {
   color: #fff;
 }
 
-/* Footer */
+/* product card (category pages) */
+.product-card {
+  padding: 28px 20px;
+  border-radius: 14px;
+  background: #111;
+  color: #fff;
+}
+
+/* --------------------
+   PRODUCT TEXT
+-------------------- */
+.product-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sizes {
+  font-size: 15px;
+  color: #ddd;
+}
+
+/* --------------------
+   ORDER SECTION
+-------------------- */
+.order-section {
+  margin-top: 24px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #25D366;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.whatsapp-btn:hover {
+  opacity: 0.9;
+}
+
+.wa-icon {
+  font-size: 18px;
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
 .site-footer {
+  margin-top: 40px;
   font-size: 14px;
   color: #666;
 }
@@ -65,5 +130,5 @@ body {
 .site-footer .small {
   margin-top: 6px;
   font-size: 13px;
+  color: #888;
 }
-
