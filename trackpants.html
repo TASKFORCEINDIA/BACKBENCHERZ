@@ -8,9 +8,9 @@
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- WhatsApp number (change anytime) -->
+  <!-- WhatsApp number (CHANGE ONLY THIS) -->
   <script>
-    const WHATSAPP_NUMBER = "918179456654";
+    const WHATSAPP_NUMBER = "918179456654"; // country code + number
   </script>
 
   <!-- WhatsApp order function -->
@@ -23,6 +23,7 @@
         "Color:%0A" +
         "Delivery Address:%0A" +
         "Mobile Number:%0A" +
+        "Selected Item Pic/Pics:%0A" +
         "App Code: BBZ";
 
       window.open(
@@ -38,7 +39,7 @@
   <!-- Header -->
   <header class="site-header">
     <h1 class="brand">Track Pants & Joggers</h1>
-    <p class="tagline">Comfort · Everyday wear</p>
+    <p class="tagline">Comfort • Everyday wear</p>
   </header>
 
   <!-- Product section -->
@@ -50,13 +51,14 @@
       <p class="price">Price: ₹ ___</p>
 
       <p class="sizes">
-        Available Sizes
+        Available Sizes (mention on WhatsApp)
       </p>
 
       <div class="order-section">
-        <button class="whatsapp-btn"
+        <button
+          class="whatsapp-btn"
           onclick="orderOnWhatsApp('Track Pants & Joggers')">
-          Order via <span class="wa-icon">🟢</span> WhatsApp
+          Order via <span class="wa-icon"></span> WhatsApp
         </button>
       </div>
     </div>
@@ -66,7 +68,7 @@
   <!-- Footer -->
   <footer class="site-footer">
     <p>UPI Payment • Hyderabad Local Delivery</p>
-    <p class="small">Visit store for fit & exclusive app benefit</p>
+    <p class="small">No returns • Exchange only • Delivery charges apply</p>
   </footer>
 
 </body>
