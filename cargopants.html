@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cargo Pants | BACKBENCHERZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- WhatsApp number -->
+  <script>
+    const WHATSAPP_NUMBER = "918179456654";
+  </script>
+
+  <!-- WhatsApp order logic -->
+  <script>
+    function orderOnWhatsApp(category) {
+      const message =
+        "Hi BACKBENCHERZ,%0A%0A" +
+        "Category: " + category + "%0A" +
+        "Size:%0A" +
+        "Color:%0A" +
+        "Delivery Address:%0A" +
+        "Mobile Number:%0A" +
+        "App Code: BBZ";
+
+      window.open(
+        "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + message,
+        "_blank"
+      );
+    }
+  </script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <h1 class="brand">Cargo Pants</h1>
+    <p class="tagline">Utility style · Everyday comfort</p>
+  </header>
+
+  <main class="categories">
+
+    <div class="product-card">
+      <h3>Utility Cargo Pants</h3>
+
+      <p class="price">Price: ₹ ___</p>
+
+      <p class="sizes">
+        Available Sizes
+      </p>
+
+      <div class="order-section">
+        <button class="whatsapp-btn"
+          onclick="orderOnWhatsApp('Cargo Pants')">
+          Order via <span class="wa-icon">🟢</span> WhatsApp
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>UPI Payment • Delivery Charges Apply</p>
+    <p class="small">No returns • Exchange only</p>
+  </footer>
+
+</body>
+</html>
 
