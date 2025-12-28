@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +8,9 @@
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- WhatsApp number (CHANGE ONLY THIS IF NEEDED) -->
+  <!-- WhatsApp number (change anytime) -->
   <script>
-    const WHATSAPP_NUMBER = "918179456654";
+    const WHATSAPP_NUMBER = "918179456654"; // put full number with country code
   </script>
 
   <!-- WhatsApp order function -->
@@ -21,10 +20,9 @@
         "Hi BACKBENCHERZ,%0A%0A" +
         "Category: " + category + "%0A" +
         "Size:%0A" +
-        "Color / Design:%0A" +
+        "Color:%0A" +
         "Delivery Address:%0A" +
         "Mobile Number:%0A" +
-        "Selected Item Photo Sent: Yes%0A" +
         "App Code: BBZ";
 
       window.open(
@@ -40,10 +38,10 @@
   <!-- Header -->
   <header class="site-header">
     <h1 class="brand">Ethnic Wear</h1>
-    <p class="tagline">Traditional • Festive • Everyday Comfort</p>
+    <p class="tagline">Traditional · Festive · Classic</p>
   </header>
 
-  <!-- Product Section -->
+  <!-- Product section -->
   <main class="categories">
 
     <div class="product-card">
@@ -52,13 +50,14 @@
       <p class="price">Price: ₹ ___</p>
 
       <p class="sizes">
-        Size & Design selected on WhatsApp
+        Available Sizes
       </p>
 
       <div class="order-section">
-        <button class="whatsapp-btn"
+        <button
+          class="whatsapp-btn"
           onclick="orderOnWhatsApp('Ethnic Wear')">
-          Order via <span class="wa-icon"></span> WhatsApp
+          Order via <span class="wa-icon">🟢</span> WhatsApp
         </button>
       </div>
     </div>
@@ -68,7 +67,7 @@
   <!-- Footer -->
   <footer class="site-footer">
     <p>UPI Payment • Hyderabad Local Delivery</p>
-    <p class="small">No returns • Exchange only • Delivery charges may apply</p>
+    <p class="small">Visit store for fit • No returns, exchange only</p>
   </footer>
 
 </body>
