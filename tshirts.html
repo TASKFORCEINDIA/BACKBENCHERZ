@@ -5,25 +5,27 @@
   <title>T-Shirts | BACKBENCHERZ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
   <!-- WhatsApp number (change anytime) -->
   <script>
-    const WHATSAPP_NUMBER = "918179456654"; 
-    // 👆 change this number later if needed
+    const WHATSAPP_NUMBER = "918179456654";
   </script>
 
   <!-- WhatsApp order function -->
   <script>
-    function orderOnWhatsApp(productName, category) {
+    function orderOnWhatsApp(category) {
       const message =
         "Hi BACKBENCHERZ,%0A%0A" +
-        "Product Name: " + productName + "%0A" +
         "Category: " + category + "%0A" +
-        "Size (S/M/L/XL/XXL): %0A" +
+        "Size: %0A" +
         "Color: %0A" +
-        "Delivery Area: %0A" +
+        "Delivery Address: %0A" +
+        "Mobile Number: %0A" +
+        "Selected Item Pic Confirmed: YES%0A" +
+        "Delivery Charges: Applicable%0A" +
+        "Returns: No%0A" +
+        "Exchange: Yes%0A" +
         "App Code: BBZ";
 
       window.open(
@@ -36,42 +38,31 @@
 
 <body>
 
-  <!-- Header -->
   <header class="site-header">
     <h1 class="brand">T-Shirts</h1>
-    <p class="tagline">Everyday wear · Easy fit</p>
+    <p class="tagline">Simple · Everyday · Reliable</p>
   </header>
 
-  <!-- Product section -->
   <main class="categories">
 
     <div class="product-card">
-      <h3>Casual Cotton T-Shirt</h3>
-
+      <h3>Round Neck T-Shirt</h3>
       <p class="price">Price: ₹ ___</p>
+      <p class="sizes">Sizes available on WhatsApp</p>
 
-      <p class="sizes">
-        Available Sizes: S · M · L · XL · XXL
-      </p>
-
-      <!-- spacing + WhatsApp order -->
       <div class="order-section">
-        <div class="order-section">
-  <button class="whatsapp-btn"
-    onclick="orderOnWhatsApp('Casual Cotton T-Shirt','T-Shirts')">
-    Order via <span class="wa-icon">🟢</span> WhatsApp
-  </button>
-</div>
-
+        <button class="whatsapp-btn"
+          onclick="orderOnWhatsApp('T-Shirts')">
+          Order via <span class="wa-icon">🟢</span> WhatsApp
+        </button>
       </div>
     </div>
 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <p>UPI Payment • Hyderabad Local Delivery</p>
-    <p class="small">Visit store for fit & exclusive app benefit</p>
+    <p>UPI Payment • Delivery charges apply</p>
+    <p class="small">No returns • Exchange only</p>
   </footer>
 
 </body>
