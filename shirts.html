@@ -1,1 +1,76 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shirts | BACKBENCHERZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- WhatsApp number (CHANGE ONLY THIS WHEN NEEDED) -->
+  <script>
+    const WHATSAPP_NUMBER = "918179456654";
+  </script>
+
+  <!-- WhatsApp order function -->
+  <script>
+    function orderOnWhatsApp(category) {
+      const message =
+        "Hi BACKBENCHERZ,%0A%0A" +
+        "Category: " + category + "%0A" +
+        "Size:%0A" +
+        "Color:%0A" +
+        "Delivery Address:%0A" +
+        "Mobile Number:%0A" +
+        "App Code: BBZ";
+
+      window.open(
+        "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + message,
+        "_blank"
+      );
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <h1 class="brand">Shirts</h1>
+    <p class="tagline">Smart wear · Everyday comfort</p>
+  </header>
+
+  <!-- Product section -->
+  <main class="categories">
+
+    <div class="product-card">
+      <h3>Men’s Casual Shirt</h3>
+
+      <p class="price">Price: ₹ ___</p>
+
+      <p class="sizes">
+        Available Sizes (mention on WhatsApp)
+      </p>
+
+      <div class="order-section">
+        <button
+          class="whatsapp-btn"
+          onclick="orderOnWhatsApp('Shirts')"
+        >
+          Order via <span class="wa-icon"></span> WhatsApp
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>UPI Payment · Hyderabad Local Delivery</p>
+    <p class="small">Visit store for fit · Exchange only · No returns</p>
+  </footer>
+
+</body>
+</html>
