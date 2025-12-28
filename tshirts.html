@@ -5,8 +5,16 @@
   <title>T-Shirts | BACKBENCHERZ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- WhatsApp number (change anytime) -->
+  <script>
+    const WHATSAPP_NUMBER = "9198XXXXXXXX"; 
+    // 👆 change this number later if needed
+  </script>
+
+  <!-- WhatsApp order function -->
   <script>
     function orderOnWhatsApp(productName, category) {
       const message =
@@ -28,30 +36,40 @@
 
 <body>
 
+  <!-- Header -->
   <header class="site-header">
     <h1 class="brand">T-Shirts</h1>
     <p class="tagline">Everyday wear · Easy fit</p>
   </header>
 
+  <!-- Product section -->
   <main class="categories">
 
-    <div class="category">
+    <div class="product-card">
       <h3>Casual Cotton T-Shirt</h3>
-      <p>Price: ₹___</p>
-      <p class="sizes">Sizes: S · M · L · XL · XXL</p>
 
-      <button class="whatsapp-btn"
-        onclick="orderOnWhatsApp('Casual Cotton T-Shirt','T-Shirts')">
-        Order via WhatsApp
-      </button>
+      <p class="price">Price: ₹ ___</p>
+
+      <p class="sizes">
+        Available Sizes: S · M · L · XL · XXL
+      </p>
+
+      <!-- spacing + WhatsApp order -->
+      <div class="order-section">
+        <button class="whatsapp-btn"
+          onclick="orderOnWhatsApp('Casual Cotton T-Shirt','T-Shirts')">
+          Order via <span class="wa-text">WhatsApp</span>
+        </button>
+      </div>
     </div>
 
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <p>UPI Payment • Hyderabad Local Delivery</p>
+    <p class="small">Visit store for fit & exclusive app benefit</p>
   </footer>
 
 </body>
 </html>
-
