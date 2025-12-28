@@ -1,1 +1,75 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ethnic Wear | BACKBENCHERZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- WhatsApp number (CHANGE ONLY THIS IF NEEDED) -->
+  <script>
+    const WHATSAPP_NUMBER = "918179456654";
+  </script>
+
+  <!-- WhatsApp order function -->
+  <script>
+    function orderOnWhatsApp(category) {
+      const message =
+        "Hi BACKBENCHERZ,%0A%0A" +
+        "Category: " + category + "%0A" +
+        "Size:%0A" +
+        "Color / Design:%0A" +
+        "Delivery Address:%0A" +
+        "Mobile Number:%0A" +
+        "Selected Item Photo Sent: Yes%0A" +
+        "App Code: BBZ";
+
+      window.open(
+        "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + message,
+        "_blank"
+      );
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <h1 class="brand">Ethnic Wear</h1>
+    <p class="tagline">Traditional • Festive • Everyday Comfort</p>
+  </header>
+
+  <!-- Product Section -->
+  <main class="categories">
+
+    <div class="product-card">
+      <h3>Men’s Ethnic Wear</h3>
+
+      <p class="price">Price: ₹ ___</p>
+
+      <p class="sizes">
+        Size & Design selected on WhatsApp
+      </p>
+
+      <div class="order-section">
+        <button class="whatsapp-btn"
+          onclick="orderOnWhatsApp('Ethnic Wear')">
+          Order via <span class="wa-icon"></span> WhatsApp
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>UPI Payment • Hyderabad Local Delivery</p>
+    <p class="small">No returns • Exchange only • Delivery charges may apply</p>
+  </footer>
+
+</body>
+</html>
