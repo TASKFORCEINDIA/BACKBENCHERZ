@@ -8,9 +8,9 @@
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- WhatsApp number (CHANGE ONLY THIS) -->
+  <!-- WhatsApp number (CHANGE ONLY THIS IF NEEDED) -->
   <script>
-    const WHATSAPP_NUMBER = "918179456654"; // country code + number
+    const WHATSAPP_NUMBER = "918179456654"; // include country code, no +
   </script>
 
   <!-- WhatsApp order function -->
@@ -18,18 +18,23 @@
     function orderOnWhatsApp(category) {
       const message =
         "Hi BACKBENCHERZ,%0A%0A" +
-        "Category: " + category + "%0A" +
+        "Category: " + category + "%0A%0A" +
         "Size:%0A" +
         "Color:%0A" +
         "Delivery Address:%0A" +
-        "Mobile Number:%0A" +
-        "Selected Item Pic/Pics:%0A" +
-        "App Code: BBZ";
+        "Mobile Number:%0A%0A" +
+        "App Code: BBZ%0A%0A" +
+        "Note:%0A" +
+        "• Delivery charges apply%0A" +
+        "• No returns, exchange only";
 
-      window.open(
-        "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + message,
-        "_blank"
-      );
+      const url =
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        message;
+
+      window.open(url, "_blank");
     }
   </script>
 </head>
@@ -39,7 +44,7 @@
   <!-- Header -->
   <header class="site-header">
     <h1 class="brand">Track Pants & Joggers</h1>
-    <p class="tagline">Comfort • Everyday wear</p>
+    <p class="tagline">Comfort · Everyday Wear</p>
   </header>
 
   <!-- Product section -->
@@ -51,13 +56,13 @@
       <p class="price">Price: ₹ ___</p>
 
       <p class="sizes">
-        Available Sizes (mention on WhatsApp)
+        Available Sizes: Customer to mention on WhatsApp
       </p>
 
       <div class="order-section">
         <button
           class="whatsapp-btn"
-          onclick="orderOnWhatsApp('Track Pants & Joggers')">
+          onclick="orderOnWhatsApp('Track Pants')">
           Order via <span class="wa-icon"></span> WhatsApp
         </button>
       </div>
@@ -68,7 +73,7 @@
   <!-- Footer -->
   <footer class="site-footer">
     <p>UPI Payment • Hyderabad Local Delivery</p>
-    <p class="small">No returns • Exchange only • Delivery charges apply</p>
+    <p class="small">Visit store for fit & exclusive app benefit</p>
   </footer>
 
 </body>
